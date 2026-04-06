@@ -1,0 +1,369 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Explorar Documentos | OlwShare</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#4355b9",
+                        "on-tertiary-container": "#ffc7a2",
+                        "surface-container-highest": "#e0e3e6",
+                        "tertiary": "#6c3400",
+                        "surface-container-low": "#f2f4f7",
+                        "inverse-primary": "#bac3ff",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#191c1e",
+                        "secondary-fixed": "#85f6e5",
+                        "on-primary-container": "#cacfff",
+                        "on-tertiary-fixed": "#301400",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#293ca0",
+                        "on-primary-fixed": "#00105c",
+                        "inverse-surface": "#2d3133",
+                        "surface-bright": "#f7f9fc",
+                        "on-tertiary-fixed-variant": "#713700",
+                        "primary-container": "#3f51b5",
+                        "surface-dim": "#d8dadd",
+                        "tertiary-fixed-dim": "#ffb784",
+                        "surface-variant": "#e0e3e6",
+                        "on-secondary-container": "#007166",
+                        "on-secondary-fixed": "#00201c",
+                        "on-surface-variant": "#454652",
+                        "inverse-on-surface": "#eff1f4",
+                        "error": "#ba1a1a",
+                        "secondary": "#006a60",
+                        "surface-container": "#eceef1",
+                        "secondary-fixed-dim": "#67d9c9",
+                        "background": "#f7f9fc",
+                        "surface": "#f7f9fc",
+                        "on-background": "#191c1e",
+                        "outline-variant": "#c5c5d4",
+                        "on-error": "#ffffff",
+                        "surface-container-high": "#e6e8eb",
+                        "primary-fixed": "#dee0ff",
+                        "outline": "#757684",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#8f4700",
+                        "secondary-container": "#85f6e5",
+                        "primary": "#24389c",
+                        "tertiary-fixed": "#ffdcc6",
+                        "on-secondary-fixed-variant": "#005048",
+                        "primary-fixed-dim": "#bac3ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}[type='text'],input:where(:not([type])),[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select{-webkit-appearance:none;appearance:none;background-color:#fff;border-color:#6b7280;border-width:1px;border-radius:0px;padding-top:0.5rem;padding-right:0.75rem;padding-bottom:0.5rem;padding-left:0.75rem;font-size:1rem;line-height:1.5rem;--tw-shadow:0 0 #0000;}[type='text']:focus, input:where(:not([type])):focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);border-color:#2563eb}input::placeholder,textarea::placeholder{color:#6b7280;opacity:1}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-date-and-time-value{min-height:1.5em;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit,::-webkit-datetime-edit-year-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute-field,::-webkit-datetime-edit-second-field,::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-meridiem-field{padding-top:0;padding-bottom:0}select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");background-position:right 0.5rem center;background-repeat:no-repeat;background-size:1.5em 1.5em;padding-right:2.5rem;print-color-adjust:exact}[multiple],[size]:where(select:not([size="1"])){background-image:initial;background-position:initial;background-repeat:unset;background-size:initial;padding-right:0.75rem;print-color-adjust:unset}[type='checkbox'],[type='radio']{-webkit-appearance:none;appearance:none;padding:0;print-color-adjust:exact;display:inline-block;vertical-align:middle;background-origin:border-box;-webkit-user-select:none;user-select:none;flex-shrink:0;height:1rem;width:1rem;color:#2563eb;background-color:#fff;border-color:#6b7280;border-width:1px;--tw-shadow:0 0 #0000}[type='checkbox']{border-radius:0px}[type='radio']{border-radius:100%}[type='checkbox']:focus,[type='radio']:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:2px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}[type='checkbox']:checked,[type='radio']:checked{border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat}[type='checkbox']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='checkbox']:checked{-webkit-appearance:auto;appearance:auto}}[type='radio']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='radio']:checked{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:checked:hover,[type='checkbox']:checked:focus,[type='radio']:checked:hover,[type='radio']:checked:focus{border-color:transparent;background-color:currentColor}[type='checkbox']:indeterminate{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat;}@media (forced-colors: active) {[type='checkbox']:indeterminate{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:indeterminate:hover,[type='checkbox']:indeterminate:focus{border-color:transparent;background-color:currentColor}[type='file']{background:unset;border-color:inherit;border-width:0;border-radius:0;padding:0;font-size:unset;line-height:inherit}[type='file']:focus{outline:1px solid ButtonText;outline:1px auto -webkit-focus-ring-color}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.-right-20{right:-5rem}.-top-20{top:-5rem}.bottom-0{bottom:0px}.left-0{left:0px}.right-0{right:0px}.top-0{top:0px}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-24{margin-top:6rem}.mt-auto{margin-top:auto}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-48{height:12rem}.h-64{height:16rem}.h-80{height:20rem}.h-\[1024px\]{height:1024px}.h-\[2px\]{height:2px}.h-full{height:100%}.min-h-\[1024px\]{min-height:1024px}.w-64{width:16rem}.w-8{width:2rem}.w-80{width:20rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.max-w-screen-2xl{max-width:1536px}.flex-1{flex:1 1 0%}.-rotate-90{--tw-rotate:-90deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;user-select:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-around{justify-content:space-around}.gap-1{gap:0.25rem}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-x-hidden{overflow-x:hidden}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b-2{border-bottom-width:2px}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-indigo-600{--tw-border-opacity:1;border-color:rgb(79 70 229 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.bg-primary{--tw-bg-opacity:1;background-color:rgb(36 56 156 / var(--tw-bg-opacity, 1))}.bg-secondary{--tw-bg-opacity:1;background-color:rgb(0 106 96 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-surface{--tw-bg-opacity:1;background-color:rgb(247 249 252 / var(--tw-bg-opacity, 1))}.bg-surface-container-high{--tw-bg-opacity:1;background-color:rgb(230 232 235 / var(--tw-bg-opacity, 1))}.bg-surface-container-lowest{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-teal-500\/10{background-color:rgb(20 184 166 / 0.1)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/40{background-color:rgb(255 255 255 / 0.4)}.bg-white\/80{background-color:rgb(255 255 255 / 0.8)}.object-cover{object-fit:cover}.p-10{padding:2.5rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-12{padding-left:3rem;padding-right:3rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-2{padding-bottom:0.5rem}.pl-6{padding-left:1.5rem}.pt-4{padding-top:1rem}.pt-8{padding-top:2rem}.font-\[\'Inter\'\]{font-family:'Inter'}.font-\[\'Manrope\'\]{font-family:'Manrope'}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-\[10px\]{font-size:10px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-light{font-weight:300}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-6{line-height:1.5rem}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-tighter{letter-spacing:-0.05em}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-error{--tw-text-opacity:1;color:rgb(186 26 26 / var(--tw-text-opacity, 1))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229 / var(--tw-text-opacity, 1))}.text-indigo-700{--tw-text-opacity:1;color:rgb(67 56 202 / var(--tw-text-opacity, 1))}.text-indigo-900{--tw-text-opacity:1;color:rgb(49 46 129 / var(--tw-text-opacity, 1))}.text-indigo-950{--tw-text-opacity:1;color:rgb(30 27 75 / var(--tw-text-opacity, 1))}.text-on-surface{--tw-text-opacity:1;color:rgb(25 28 30 / var(--tw-text-opacity, 1))}.text-on-surface-variant{--tw-text-opacity:1;color:rgb(69 70 82 / var(--tw-text-opacity, 1))}.text-outline{--tw-text-opacity:1;color:rgb(117 118 132 / var(--tw-text-opacity, 1))}.text-outline-variant{--tw-text-opacity:1;color:rgb(197 197 212 / var(--tw-text-opacity, 1))}.text-primary-container{--tw-text-opacity:1;color:rgb(63 81 181 / var(--tw-text-opacity, 1))}.text-secondary{--tw-text-opacity:1;color:rgb(0 106 96 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-teal-600{--tw-text-opacity:1;color:rgb(13 148 136 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.opacity-80{opacity:0.8}.shadow-\[0_20px_40px_rgba\(25\2c 28\2c 30\2c 0\.08\)\]{--tw-shadow:0 20px 40px rgba(25,28,30,0.08);--tw-shadow-colored:0 20px 40px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-primary\/20{--tw-shadow-color:rgb(36 56 156 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.grayscale{--tw-grayscale:grayscale(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-200{transition-duration:200ms}.duration-300{transition-duration:300ms}.duration-700{transition-duration:700ms}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.hover\:bg-surface-container-highest:hover{--tw-bg-opacity:1;background-color:rgb(224 227 230 / var(--tw-bg-opacity, 1))}.hover\:text-indigo-500:hover{--tw-text-opacity:1;color:rgb(99 102 241 / var(--tw-text-opacity, 1))}.hover\:text-indigo-600:hover{--tw-text-opacity:1;color:rgb(79 70 229 / var(--tw-text-opacity, 1))}.hover\:opacity-80:hover{opacity:0.8}.hover\:shadow-\[0_20px_40px_rgba\(25\2c 28\2c 30\2c 0\.08\)\]:hover{--tw-shadow:0 20px 40px rgba(25,28,30,0.08);--tw-shadow-colored:0 20px 40px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:gap-4{gap:1rem}.group:hover .group-hover\:grayscale-0{--tw-grayscale:grayscale(0);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.dark\:border-slate-800:is(.dark *){--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.dark\:border-slate-900:is(.dark *){--tw-border-opacity:1;border-color:rgb(15 23 42 / var(--tw-border-opacity, 1))}.dark\:bg-slate-900:is(.dark *){--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.dark\:bg-slate-900\/80:is(.dark *){background-color:rgb(15 23 42 / 0.8)}.dark\:bg-slate-950:is(.dark *){--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity, 1))}.dark\:text-indigo-100:is(.dark *){--tw-text-opacity:1;color:rgb(224 231 255 / var(--tw-text-opacity, 1))}.dark\:text-indigo-300:is(.dark *){--tw-text-opacity:1;color:rgb(165 180 252 / var(--tw-text-opacity, 1))}.dark\:text-indigo-400:is(.dark *){--tw-text-opacity:1;color:rgb(129 140 248 / var(--tw-text-opacity, 1))}.dark\:text-slate-400:is(.dark *){--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.dark\:text-white:is(.dark *){--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.dark\:hover\:bg-slate-900:hover:is(.dark *){--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:w-auto{width:auto}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-start{align-items:flex-start}}@media (min-width: 1024px){.lg\:ml-64{margin-left:16rem}.lg\:mt-6{margin-top:1.5rem}.lg\:flex{display:flex}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:p-12{padding:3rem}.lg\:text-6xl{font-size:3.75rem;line-height:1}}</style><link rel="stylesheet" href="../../css/base.css"/>
+<link rel="stylesheet" href="../../css/components.css"/>
+</head>
+<body class="bg-surface text-on-surface min-h-[1024px] flex" data-stitch-vh="min-h-[1024px]===min-h-screen" data-mode="connect">
+<!-- SideNavBar (The Anchor) -->
+<aside class="h-[1024px] w-64 fixed left-0 top-0 hidden lg:flex flex-col bg-slate-50 dark:bg-slate-950 p-6 space-y-4 architecture" data-stitch-vh="h-[1024px]===h-screen">
+<div class="mb-8">
+<span class="font-['Manrope'] text-xl font-bold text-indigo-900">OwlShare</span>
+</div>
+<div class="flex-1 space-y-1">
+<nav class="space-y-1">
+<!-- Active State Logic: Dashboard/Documentos -->
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-transform duration-200 cursor-pointer select-none rounded-lg font-medium text-sm leading-6" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+                    Home
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 bg-white dark:bg-slate-900 text-indigo-700 dark:text-indigo-300 rounded-lg shadow-sm font-semibold transition-transform duration-200 cursor-pointer select-none text-sm leading-6" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+                    Dashboard
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-transform duration-200 cursor-pointer select-none rounded-lg font-medium text-sm leading-6" href="#">
+<span class="material-symbols-outlined" data-icon="school">school</span>
+                    Tutors
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-transform duration-200 cursor-pointer select-none rounded-lg font-medium text-sm leading-6" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+                    Profile
+                </a>
+</nav>
+<div class="pt-8 pb-2">
+<p class="text-[10px] uppercase tracking-widest text-outline px-4 font-bold">Biblioteca</p>
+</div>
+<a class="flex items-center gap-3 px-4 py-3 bg-white dark:bg-slate-900 text-indigo-700 dark:text-indigo-300 rounded-lg shadow-sm font-semibold transition-transform duration-200 cursor-pointer select-none text-sm leading-6" href="#">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+                Documentos
+            </a>
+</div>
+<div class="mt-auto border-t border-slate-200 dark:border-slate-800 pt-4 space-y-1">
+<a class="flex items-center gap-3 px-4 py-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-transform duration-200 cursor-pointer select-none rounded-lg text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+                Settings
+            </a>
+<a class="flex items-center gap-3 px-4 py-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-transform duration-200 cursor-pointer select-none rounded-lg text-sm text-error" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+                Logout
+            </a>
+</div>
+</aside>
+<!-- Main Canvas -->
+<main class="flex-1 lg:ml-64 min-h-[1024px] flex flex-col bg-surface overflow-x-hidden" data-stitch-vh="min-h-[1024px]===min-h-screen">
+<!-- Top Navigation Shell -->
+<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl docked full-width top-0 z-50 sticky shadow-[0_20px_40px_rgba(25,28,30,0.08)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-4">
+<h1 class="text-2xl font-extrabold text-indigo-900 dark:text-indigo-100 tracking-tighter">OlwShare</h1>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden md:flex gap-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 transition-all duration-200 hover:opacity-80 font-['Manrope'] font-bold tracking-tight text-sm" href="#">Home</a>
+<a class="text-indigo-700 dark:text-indigo-400 border-b-2 border-indigo-600 font-bold transition-all duration-200 hover:opacity-80 font-['Manrope'] font-bold tracking-tight text-sm" href="#">Dashboard</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 transition-all duration-200 hover:opacity-80 font-['Manrope'] font-bold tracking-tight text-sm" href="#">Profile</a>
+</div>
+<div class="flex items-center gap-4 border-l border-slate-100 pl-6">
+<span class="material-symbols-outlined text-slate-500 cursor-pointer hover:text-indigo-600 transition-colors" data-icon="notifications">notifications</span>
+<span class="material-symbols-outlined text-indigo-700 cursor-pointer" data-icon="account_circle" style="font-variation-settings: 'FILL' 1;">account_circle</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Content Area -->
+<div class="p-8 lg:p-12 max-w-7xl w-full mx-auto flex-1">
+<!-- Hero Editorial Section -->
+<section class="mb-16 space-y-4">
+<div class="flex items-center gap-2 text-secondary font-semibold text-sm tracking-widest uppercase">
+<span class="h-[2px] w-8 bg-secondary"></span>
+<span>Curaduría Académica</span>
+</div>
+<h2 class="text-5xl lg:text-6xl font-extrabold text-on-surface tracking-tighter leading-none">Explorar Documentos</h2>
+<p class="text-outline text-lg max-w-2xl leading-relaxed">
+                    Accede a una colección seleccionada de recursos educativos organizados por disciplinas. Sin distracciones, solo conocimiento puro.
+                </p>
+</section>
+<!-- Filters / Secondary Nav (Asymmetric Layout) -->
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div class="flex gap-4 overflow-x-auto pb-2 w-full md:w-auto">
+<span class="px-6 py-2 bg-primary text-white rounded-full text-sm font-medium shadow-md shadow-primary/20">Todas</span>
+<span class="px-6 py-2 bg-surface-container-high text-on-surface-variant rounded-full text-sm font-medium hover:bg-surface-container-highest transition-colors cursor-pointer">Ciencias</span>
+<span class="px-6 py-2 bg-surface-container-high text-on-surface-variant rounded-full text-sm font-medium hover:bg-surface-container-highest transition-colors cursor-pointer">Ingeniería</span>
+<span class="px-6 py-2 bg-surface-container-high text-on-surface-variant rounded-full text-sm font-medium hover:bg-surface-container-highest transition-colors cursor-pointer">Humanidades</span>
+</div>
+<div class="flex items-center gap-2 text-outline-variant italic text-sm">
+                    Mostrando 12 materias disponibles
+                </div>
+</div>
+<!-- Bento Grid - Subjects -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card: Matemáticas -->
+<article class="group relative bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(25,28,30,0.08)]">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="clean minimal chalkboard with complex mathematical equations written in white chalk artistic soft focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCVpBBXygU57lPO3O-UUKiRKem067wUn1O_9WX__0279VtMAS4esTTFFKUsSF813iphxUh_ybJue22wcJw47gvQBCKCmJHU0BSXENXhfoGr8DU9BV1uTaf4RdoxKbRW9lO2VzzK_bB_iDEAQxxEHvqH9lJJZnoibVL9VL9NaDjkjAsT5IyLkxv4sxiao_8w_av4UNB8uPGcooYfcGGwZRYTS71Xo9QxLrgCUMZ53t1n372_mG-iXJJYWZQ_txPfrM90Bly03o3qtgN">
+</div>
+<div class="p-8 space-y-4">
+<div class="flex justify-between items-start">
+<span class="text-primary-container font-bold text-xs tracking-widest uppercase">Ciencia Exacta</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-lg" data-icon="folder">folder</span>
+<span class="text-sm font-bold">142</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-on-surface leading-tight">Matemáticas</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Desde cálculo diferencial hasta álgebra lineal avanzada para ingeniería.</p>
+<div class="pt-4 flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-4 transition-all">
+                            Ver Biblioteca <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card: Física (Asymmetric Offset) -->
+<article class="group relative bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(25,28,30,0.08)] lg:mt-6">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="minimalist laboratory setting with a glass prism refracting light into a spectrum dark moody background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp2O2HbFuAt8WYnUa-PXmCWrQqvG2mVAmjSRQ28CmQeED3rrA6O1yz98Ckzgw9yTdkAzm4e-KCeKLuy-L2F7jMyQQXK8a_nhZA7dHy_OEjkkY1JJWYZX89ToFCBduu8uHbroU8AlVJ967QumIy1_AXm-Nl76SdnfifkdM7S40X19436n1PLiOIJlGHFUwUyE3zwBqXpmGSlYgtFd6xVRub4utYhh_X2sb62EpZOohaFIZxgjLFo8JyaJWuI-TL9khZ5kbsHj1iHf3s">
+</div>
+<div class="p-8 space-y-4">
+<div class="flex justify-between items-start">
+<span class="text-primary-container font-bold text-xs tracking-widest uppercase">Fenómenos Naturales</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-lg" data-icon="folder">folder</span>
+<span class="text-sm font-bold">89</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-on-surface leading-tight">Física</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Mecánica clásica, electromagnetismo y fundamentos de física moderna.</p>
+<div class="pt-4 flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-4 transition-all">
+                            Ver Biblioteca <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card: Programación -->
+<article class="group relative bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(25,28,30,0.08)]">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="close-up of code on a high resolution screen with neon blue and purple accents dark minimalist workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6qJjFI27jVd9VY0w674JUFEcqUye34ELxTZWdWn0OWCAzgRsEqAc0Y6M684QDjhHsaBOikI2v5TA-1wLLem02S0kRJgqnXsxTWef4O7rUDEC79MzrfMHrqPEkHj9SroA5r14kcYGiej1hkC5KPALDhN2bOEMbFtwW2fShJVdLWO_-n1eTFoHII62mYbwg03pkgARxzCUI1z6g37Ptkic2yiSkD5EbaTvZmuWCECXvC-6iZ_f6dXZWpjj1A7sJMji-WYDerBDOjFfk">
+</div>
+<div class="p-8 space-y-4">
+<div class="flex justify-between items-start">
+<span class="text-primary-container font-bold text-xs tracking-widest uppercase">Software</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-lg" data-icon="folder">folder</span>
+<span class="text-sm font-bold">256</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-on-surface leading-tight">Programación</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Estructuras de datos, algoritmos y desarrollo de aplicaciones web.</p>
+<div class="pt-4 flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-4 transition-all">
+                            Ver Biblioteca <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card: Historia -->
+<article class="group relative bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(25,28,30,0.08)]">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="vintage leather bound books stacked in a dusty library with warm morning sunlight beams" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFHu9XJUb2CVsFOHHfswdMi8EPn6ViwjxPwcaHfDVcR4C0x3nVZ80_nwNK4vfwMsJ620Do-c9DRU5MH9nM9ZW3hDiYxFq9XoIKg_teHFICzDwtd29jBzOk3y9cT2BVMYGcjstgkNsthp34Seeqf5G5AnP-p5-dvGmH1poiU3xPBV8eW1G6z34jsiilLDc9Y_uXLXAhNTBA33hUhBiSI-NApFqlrmPmSXiiWjhKZ_D0cLgfQ4Jd9kiA9FTtE-erQUe_LWNVC8dm01OF">
+</div>
+<div class="p-8 space-y-4">
+<div class="flex justify-between items-start">
+<span class="text-primary-container font-bold text-xs tracking-widest uppercase">Humanidades</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-lg" data-icon="folder">folder</span>
+<span class="text-sm font-bold">64</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-on-surface leading-tight">Historia</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Archivos históricos y ensayos sobre civilizaciones y eventos mundiales.</p>
+<div class="pt-4 flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-4 transition-all">
+                            Ver Biblioteca <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card: Química (Asymmetric Offset) -->
+<article class="group relative bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(25,28,30,0.08)] lg:mt-6">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="close up of glass laboratory test tubes with vibrant teal liquids aesthetic scientific setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVswju8SdQnufZVg92SUcTAcwHkIkZqMU1deKmk8eDFt0OGr-qtK8pZr3lpL2kL3hqbpCXMdKU5YiP1P7WHhO8B1gH_SyphbzdpyxChMbUXGGhlxC5NlmvAMGOsBLM5kBONSAsN1RBlpo6F32-hEIVmWxQJNo0Qx65dFI1ytUXrZzNvJ2lLsGpSqhmgcZQrgkgp7CkMOY0p4S_4r9xTdSSsCTac2Wk-9TGXq7md7B9gw3frmvxgdZlrPHmYSWByLNVAoeH832bSkdv">
+</div>
+<div class="p-8 space-y-4">
+<div class="flex justify-between items-start">
+<span class="text-primary-container font-bold text-xs tracking-widest uppercase">Laboratorio</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-lg" data-icon="folder">folder</span>
+<span class="text-sm font-bold">112</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-on-surface leading-tight">Química</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Química orgánica, inorgánica y procesos químicos industriales.</p>
+<div class="pt-4 flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-4 transition-all">
+                            Ver Biblioteca <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card: Literatura -->
+<article class="group relative bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(25,28,30,0.08)]">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="open classic book with elegant typography on cream paper with a small dried flower bookmark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs-psuLK_ek7ajQ5Ph9wTCJeSjqvRWo2mMroDgLVvBGE5hVtYfd2RjngpZQD1FgNvh6NSP4acbdsi2qmVFPYIBMxW2d5RHDuLcDtfmpB16ZnNVpHZS1ddV-ipZUUqaEPwdKps_B9-wSzJkhNfWBMFARPYUonTGLQ09vrtXWoD4MX08mrL7IfOE9tzBsyEz33gRQZhTkNd0wxKnp5TxIHPisRUJgZ1d9hncwR9fGCyFfFBFSoYpDALjeYrRdWiR-OFbJkUUHlDfA_AF">
+</div>
+<div class="p-8 space-y-4">
+<div class="flex justify-between items-start">
+<span class="text-primary-container font-bold text-xs tracking-widest uppercase">Letras</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-lg" data-icon="folder">folder</span>
+<span class="text-sm font-bold">178</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-on-surface leading-tight">Literatura</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Análisis literario, movimientos artísticos y crítica de textos clásicos.</p>
+<div class="pt-4 flex items-center gap-2 text-indigo-600 font-semibold text-sm group-hover:gap-4 transition-all">
+                            Ver Biblioteca <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</article>
+</div>
+<!-- Learning Progress Orbit (Signature Component) -->
+<section class="mt-24 p-10 rounded-2xl bg-white/40 backdrop-blur-md relative border border-white/20 overflow-hidden">
+<div class="absolute -right-20 -top-20 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
+<div class="max-w-md">
+<h4 class="text-3xl font-extrabold text-indigo-900 mb-4 tracking-tight">Tu Progreso de Lectura</h4>
+<p class="text-slate-600 leading-relaxed mb-6">Has completado el 65% de los documentos sugeridos para este semestre. Mantén el ritmo para alcanzar la excelencia.</p>
+<div class="flex gap-4">
+<div class="p-4 bg-white/80 rounded-lg shadow-sm">
+<span class="block text-2xl font-bold text-indigo-700">24</span>
+<span class="text-xs uppercase tracking-wider text-slate-400 font-bold">Leídos</span>
+</div>
+<div class="p-4 bg-white/80 rounded-lg shadow-sm">
+<span class="block text-2xl font-bold text-teal-600">12</span>
+<span class="text-xs uppercase tracking-wider text-slate-400 font-bold">En curso</span>
+</div>
+</div>
+</div>
+<div class="relative w-64 h-64 flex items-center justify-center">
+<!-- Semi-circular Progress Ring Mockup -->
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-slate-200" cx="128" cy="128" fill="transparent" r="100" stroke="currentColor" stroke-width="20"></circle>
+<circle class="text-teal-600" cx="128" cy="128" fill="transparent" r="100" stroke="currentColor" stroke-dasharray="628" stroke-dashoffset="220" stroke-linecap="round" stroke-width="20"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="text-4xl font-black text-indigo-950">65%</span>
+<span class="text-xs uppercase font-bold text-slate-400 tracking-widest">Meta Anual</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Footer -->
+<footer class="w-full py-12 mt-auto border-t border-slate-100 dark:border-slate-900 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-7xl mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-['Manrope'] font-black uppercase text-slate-900 dark:text-white tracking-widest">OlwShare</span>
+<p class="font-['Inter'] text-xs font-light tracking-wide text-slate-400">© 2024 OlwShare. Editorial Intelligence for the Modern Student.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-xs font-light tracking-wide text-slate-400 hover:text-indigo-500 transition-opacity" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-xs font-light tracking-wide text-slate-400 hover:text-indigo-500 transition-opacity" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-xs font-light tracking-wide text-slate-400 hover:text-indigo-500 transition-opacity" href="#">About Us</a>
+</div>
+</div>
+</footer>
+</main>
+<!-- Mobile Navigation Shell (Responsive Pivot) -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-xl border-t border-slate-100 flex justify-around items-center py-3 px-6 z-50">
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Inicio</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-indigo-600" href="#">
+<span class="material-symbols-outlined" data-icon="description" style="font-variation-settings: 'FILL' 1;">description</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Docs</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined" data-icon="school">school</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Tutors</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Perfil</span>
+</a>
+</nav>
+<script type="module" src="../../js/pages/subjects.js"></script>
+</body></html>

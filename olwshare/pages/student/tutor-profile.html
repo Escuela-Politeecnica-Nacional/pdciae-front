@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#191c1e",
+                        "on-secondary-fixed": "#00201c",
+                        "surface-tint": "#4355b9",
+                        "secondary": "#006a60",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#293ca0",
+                        "on-primary-fixed": "#00105c",
+                        "tertiary-container": "#8f4700",
+                        "on-tertiary-fixed": "#301400",
+                        "on-secondary-fixed-variant": "#005048",
+                        "tertiary-fixed-dim": "#ffb784",
+                        "secondary-fixed-dim": "#67d9c9",
+                        "on-tertiary-container": "#ffc7a2",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e0e3e6",
+                        "secondary-fixed": "#85f6e5",
+                        "primary-fixed-dim": "#bac3ff",
+                        "inverse-primary": "#bac3ff",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#dee0ff",
+                        "tertiary-fixed": "#ffdcc6",
+                        "surface": "#f7f9fc",
+                        "on-surface-variant": "#454652",
+                        "surface-variant": "#e0e3e6",
+                        "primary-container": "#3f51b5",
+                        "on-secondary-container": "#007166",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f2f4f7",
+                        "tertiary": "#6c3400",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#e6e8eb",
+                        "background": "#f7f9fc",
+                        "outline": "#757684",
+                        "on-primary-container": "#cacfff",
+                        "surface-dim": "#d8dadd",
+                        "inverse-surface": "#2d3133",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c5c5d4",
+                        "on-tertiary-fixed-variant": "#713700",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f7f9fc",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#eceef1",
+                        "primary": "#24389c",
+                        "on-background": "#191c1e",
+                        "inverse-on-surface": "#eff1f4",
+                        "secondary-container": "#85f6e5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .brand-text { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-header { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); }
+        .custom-gradient-primary { background: linear-gradient(135deg, #24389c 0%, #3f51b5 100%); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 glass-header shadow-sm bg-white/80 dark:bg-slate-900/80 flex justify-between items-center px-8 py-4 w-full max-w-full">
+<div class="flex items-center gap-8"><a class="material-symbols-outlined p-2 text-indigo-900 dark:text-indigo-100 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-all mr-2" href="#/buscar-tutor">arrow_back</a>
+<span class="text-2xl font-bold text-indigo-900 dark:text-indigo-100 tracking-tight">OlwShare</span>
+<nav class="hidden md:flex gap-6">
+<a class="text-indigo-700 dark:text-indigo-400 font-bold border-b-2 border-indigo-700 font-manrope tracking-tight" href="#/buscar-tutor">Explorar</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-indigo-600 dark:hover:text-indigo-300 transition-colors font-manrope tracking-tight" href="#">Mis Clases</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-indigo-600 dark:hover:text-indigo-300 transition-colors font-manrope tracking-tight" href="#">Recursos</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined p-2 text-on-surface-variant hover:bg-surface-container rounded-full transition-all">notifications</button>
+<button class="material-symbols-outlined p-2 text-on-surface-variant hover:bg-surface-container rounded-full transition-all">chat_bubble</button>
+<button class="ml-4 px-6 py-2 rounded-lg custom-gradient-primary text-on-primary font-semibold text-sm shadow-sm transition-transform active:scale-95">Convertirse en Tutor</button>
+</div>
+</header>
+<!-- Side Navigation Bar -->
+<aside class="fixed left-0 top-0 h-full w-64 bg-slate-50 dark:bg-slate-950 flex flex-col gap-4 p-6 pt-24 z-40">
+<div class="mb-8 flex items-center gap-3 p-2 bg-white dark:bg-slate-900 rounded-xl shadow-sm">
+<img alt="Foto de perfil del Tutor" class="w-10 h-10 rounded-full" data-alt="close-up professional portrait of a woman with glasses in a modern office, soft natural lighting, elegant business attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdBv1HvUfRBovdDTOJB0_SX1XiFQLjWrkSzSbpegAIN1oSS4bVyhGbMv3yxOVqe2D7HT08yD8LjFEmjygxI14Tn9Ic9ZtKnyMccF9Imd5tSWA7Kb9dgFsZe1K4L0Ue2Tl0cPs21ZVBakLpDuZNsHXWW1214TXQMZyQbF0AUq4xncFjgLIdQs_3oPPgF2ex6MR0Y_exyabExEtZjCnDyH0hwKNchzhrdISaY3_IyLnZFnRgOQw-7xClFkqRirBA-oVRUk-_jeCPT366"/>
+<div>
+<p class="text-sm font-semibold text-indigo-900">Panel de Tutor</p>
+<p class="text-xs text-slate-500">Nivel Scholar</p>
+</div>
+</div>
+<nav class="space-y-1">
+<a class="flex items-center gap-3 p-3 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-900/50 rounded-lg transition-all group" href="#/dashboard">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-medium">Panel</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-indigo-900 dark:text-indigo-100 font-semibold bg-white dark:bg-slate-900 rounded-lg shadow-sm" href="#/tutorias">
+<span class="material-symbols-outlined">school</span>
+<span class="font-medium">Tutorías</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-900/50 rounded-lg transition-all" href="#/calendario">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-medium">Calendario</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-900/50 rounded-lg transition-all" href="#/finanzas">
+<span class="material-symbols-outlined">payments</span>
+<span class="font-medium">Finanzas</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-900/50 rounded-lg transition-all" href="#/configuracion">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-medium">Configuración</span>
+</a>
+</nav>
+<div class="mt-auto space-y-1">
+<a class="flex items-center gap-3 p-3 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-900/50 rounded-lg transition-all" href="#/ayuda">
+<span class="material-symbols-outlined">help</span>
+<span class="font-medium">Ayuda</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-900/50 rounded-lg transition-all" href="javascript:void(0)" onclick="auth.logout()">
+<span class="material-symbols-outlined">logout</span>
+<span class="font-medium">Cerrar Sesión</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="ml-64 pt-24 px-12 pb-12">
+<div class="max-w-6xl mx-auto grid grid-cols-12 gap-8">
+<!-- Profile Column (Left 8/12) -->
+<div class="col-span-12 lg:col-span-8 space-y-8">
+<!-- Header Section -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-sm border-0">
+<div class="flex items-start gap-8">
+<div class="relative">
+<img alt="Avatar del usuario" class="w-32 h-32 rounded-2xl object-cover ring-4 ring-surface-container" data-alt="professional portrait of Dr. Elena Martinez, female professor with sophisticated glasses and a kind expression, soft academic studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP6lPT3tA-Q8_9l05bVwPYb1LR_OQIWCy69t9ypjjm2vu7hhLioouA7U69J7LQ5jwyCt98rhrcPxt6pmop8jMvpWXtvJoUQPfFRhaIXTntZNXCoOgdu6qjaTG7Kl0Uzhj9JZLMf-FBBRuHQf0C9GLEd4svyURyJtYMzN7iPp2Pu8S6cXGzM5FFbD3cRxqKzDS3np2OFiT_t4jI-5YujCowBTywGAqk0PzA2DPkxpRCZzg8_7TpeNwoeM2tLrTsNdPYVuUj-q1vInRS"/>
+<div class="absolute -bottom-2 -right-2 bg-secondary text-on-secondary px-3 py-1 rounded-full text-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                                4.9
+                            </div>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-2">
+<h1 class="text-3xl font-extrabold text-on-surface tracking-tight">Dra. Elena Martínez</h1>
+<span class="px-4 py-1 bg-primary-fixed text-primary rounded-full text-xs font-bold uppercase tracking-widest">Scholar Nivel Gold</span>
+</div>
+<p class="text-xl text-primary font-semibold mb-4">Cálculo Diferencial &amp; Matemáticas Avanzadas</p>
+<div class="flex gap-4">
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-lg text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg">history_edu</span>
+<span>8 años de experiencia</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-lg text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg">public</span>
+<span>Madrid, España (Online)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bento Grid Sections -->
+<div class="grid grid-cols-2 gap-6">
+<!-- About Me (Spans 2 columns) -->
+<div class="col-span-2 bg-surface-container-lowest rounded-xl p-8 shadow-sm border-0">
+<h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">person</span>
+                            Sobre mí
+                        </h2>
+<div class="text-on-surface-variant leading-relaxed space-y-4">
+<p>Especialista en la enseñanza de Cálculo Diferencial con un enfoque práctico y visual. Mi metodología se centra en descomponer conceptos complejos en pasos lógicos y manejables.</p>
+<p>He ayudado a más de 500 estudiantes a superar sus retos académicos en ingeniería y ciencias exactas, combinando la teoría con aplicaciones del mundo real.</p>
+</div>
+<div class="mt-8 pt-8 border-t border-surface-container-high grid grid-cols-3 gap-4">
+<div class="text-center">
+<p class="text-2xl font-bold text-primary">150+</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Tutorías</p>
+</div>
+<div class="text-center border-x border-surface-container-high">
+<p class="text-2xl font-bold text-primary">98%</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Éxito</p>
+</div>
+<div class="text-center">
+<p class="text-2xl font-bold text-primary">24h</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Respuesta</p>
+</div>
+</div>
+</div>
+<!-- Available Times Section -->
+<div class="col-span-2 bg-surface-container-lowest rounded-xl p-8 shadow-sm border-0">
+<h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">event_available</span>
+                            Horarios Disponibles
+                        </h2>
+<!-- Empty state check (Visible if list were empty - hidden here as we show slots) -->
+<div class="hidden flex flex-col items-center justify-center py-12 text-on-surface-variant">
+<span class="material-symbols-outlined text-4xl mb-4 opacity-20">calendar_month</span>
+<p class="font-medium text-lg">No hay horarios disponibles</p>
+<p class="text-sm">Por favor, contacta al tutor para solicitar una apertura.</p>
+</div>
+<!-- Slots Display -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<button class="group p-4 bg-surface-container-low hover:bg-primary-fixed border-2 border-transparent hover:border-primary-container rounded-xl transition-all text-center">
+<p class="text-xs font-bold text-on-surface-variant group-hover:text-primary uppercase tracking-tighter">Lunes</p>
+<p class="text-lg font-bold">10:00</p>
+</button>
+<button class="group p-4 bg-primary-container text-on-primary rounded-xl transition-all text-center ring-4 ring-primary/10">
+<p class="text-xs font-bold text-on-primary-container uppercase tracking-tighter">Lunes</p>
+<p class="text-lg font-bold">15:00</p>
+</button>
+<button class="group p-4 bg-surface-container-low hover:bg-primary-fixed border-2 border-transparent hover:border-primary-container rounded-xl transition-all text-center">
+<p class="text-xs font-bold text-on-surface-variant group-hover:text-primary uppercase tracking-tighter">Martes</p>
+<p class="text-lg font-bold">09:30</p>
+</button>
+<button class="group p-4 bg-surface-container-low hover:bg-primary-fixed border-2 border-transparent hover:border-primary-container rounded-xl transition-all text-center">
+<p class="text-xs font-bold text-on-surface-variant group-hover:text-primary uppercase tracking-tighter">Miércoles</p>
+<p class="text-lg font-bold">17:00</p>
+</button>
+<button class="group p-4 bg-surface-container-low hover:bg-primary-fixed border-2 border-transparent hover:border-primary-container rounded-xl transition-all text-center">
+<p class="text-xs font-bold text-on-surface-variant group-hover:text-primary uppercase tracking-tighter">Jueves</p>
+<p class="text-lg font-bold">11:00</p>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Sidebar Card (Right 4/12) -->
+<div class="col-span-12 lg:col-span-4">
+<div class="sticky top-28 bg-white rounded-2xl shadow-xl shadow-indigo-900/5 p-8 border border-outline-variant/15">
+<div class="flex justify-between items-center mb-8">
+<span class="text-on-surface-variant font-medium">Resumen de sesión</span>
+<div class="w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">payments</span>
+</div>
+</div>
+<div class="mb-8">
+<p class="text-sm text-on-surface-variant mb-1">Costo por hora</p>
+<div class="flex items-baseline gap-2">
+<span class="text-4xl font-extrabold text-indigo-900">$18.00</span>
+<span class="text-on-surface-variant font-medium">/hr</span>
+</div>
+</div>
+<div class="space-y-4 mb-8">
+<div class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span>Soporte vía chat 24/7</span>
+</div>
+<div class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span>Material didáctico incluido</span>
+</div>
+<div class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span>Grabación de sesión disponible</span>
+</div>
+</div>
+<button class="w-full py-4 rounded-xl custom-gradient-primary text-white font-bold text-lg shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all mb-4" onclick="window.location.hash = '#/agendar-sesion/elena-martinez'">
+                        Agendar Sesión
+                    </button>
+<!-- Learning Progress Orbit Visual (Signature Component) -->
+</div>
+</div>
+</div>
+</main>
+</body></html>

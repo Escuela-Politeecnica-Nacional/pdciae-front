@@ -1,0 +1,93 @@
+/* ============================================
+   OlwShare — base.css
+   Variables globales, reset y tipografía
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap');
+
+/* ── Design Tokens ── */
+:root {
+  /* Colores principales (consistentes con los HTML de Stitch) */
+  --color-primary:           #24389c;
+  --color-primary-container: #3f51b5;
+  --color-primary-fixed:     #dee0ff;
+  --color-primary-fixed-dim: #bac3ff;
+  --color-on-primary:        #ffffff;
+
+  --color-secondary:           #006a60;
+  --color-secondary-container: #85f6e5;
+  --color-on-secondary:        #ffffff;
+
+  --color-surface:                  #f7f9fc;
+  --color-surface-container:        #eceef1;
+  --color-surface-container-low:    #f2f4f7;
+  --color-surface-container-high:   #e6e8eb;
+  --color-surface-container-highest:#e0e3e6;
+  --color-surface-container-lowest: #ffffff;
+
+  --color-on-surface:         #191c1e;
+  --color-on-surface-variant: #454652;
+  --color-outline:            #757684;
+  --color-outline-variant:    #c5c5d4;
+
+  --color-error:           #ba1a1a;
+  --color-error-container: #ffdad6;
+
+  /* Tipografía */
+  --font-headline: 'Manrope', sans-serif;
+  --font-body:     'Inter', sans-serif;
+
+  /* Espaciado */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+
+  /* Radios */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-full: 9999px;
+
+  /* Sombras */
+  --shadow-sm: 0 2px 8px rgba(25, 28, 30, 0.06);
+  --shadow-md: 0 8px 24px rgba(25, 28, 30, 0.08);
+  --shadow-lg: 0 20px 40px rgba(25, 28, 30, 0.10);
+
+  /* Transiciones */
+  --transition: all 0.2s ease;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headline);
+  line-height: 1.2;
+  color: var(--color-on-surface);
+}
+
+a { color: var(--color-primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { max-width: 100%; display: block; }
+
+button { cursor: pointer; border: none; background: none; font-family: var(--font-body); }
+
+input, select, textarea {
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
